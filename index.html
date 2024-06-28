@@ -7,12 +7,44 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         header {
             background-color: #4CAF50;
             color: white;
             padding: 1em;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            transition: background-color 0.3s ease;
+        }
+        header:hover {
+            background-color: #45a049;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        .content {
+            padding: 6em 2em 2em 2em;
+            transition: background-color 0.3s ease;
+        }
+        .content h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        .content p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .content:hover {
+            background-color: #e9e9e9;
         }
         footer {
             background-color: #f1f1f1;
@@ -22,9 +54,10 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            transition: background-color 0.3s ease;
         }
-        .content {
-            padding: 2em;
+        footer:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
